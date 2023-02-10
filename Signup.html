@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <script src="./Signup.js"></script>
+    <style>
+      a:link{
+        text-decoration: none;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: "poppins",sans-serif;
+      }
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background:black;
+      }
+      .wrapper{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        height: 550px;
+        background: transparent;
+        border: 4px solid skyblue;
+        border-radius: 15px;
+        transition: 0.5s;
+      }
+      h2{
+        font-size: 2em;
+        text-align: center;
+        color:yellow;
+        transition: 0.5s;
+      }
+      .inputbox{
+        position: relative;
+        width: 320px;
+        margin: 30px 0;
+      }
+      .inputbox input{
+        width: 100%;
+        height: 50px;
+        border-radius: 7px;
+        background: black;
+        border: 2px solid yellowgreen;
+        font-size: 1em;
+        color: white;
+        padding: 0 10px 0 35px;
+      }
+      button{
+        width: 100%;
+        height: 50px;
+        border-radius: 7px;
+        background:blue;
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+      }
+      .forgotpassword{
+        width: 100%;
+        height: 30px;
+        border-radius: 7px;
+        font-size: 1em;
+        color: white;
+        padding: 0 10px 0 35px;
+      }
+      p{
+        padding-top: 30px;
+        padding-left: 30px;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+      <form action="" id="form">
+        <h2>SIGNUP</h2>
+        <div class="inputbox">
+          <input id="num1" type="email" placeholder="Email">
+        </div>
+        <div class="inputbox">
+          <input id="num2" type="number" placeholder="PhoneNumber">
+        </div>
+        <div class="inputbox">
+            <input id="num3" type="text" placeholder="UserName">
+          </div>
+        <div class="inputbox">
+            <input id="num4" type="password" placeholder="Password">
+        </div>
+        <div class="inputbox">
+            <input id="num5" type="password" placeholder="ConfirmPassword">
+          </div>
+        <div>
+            <button type="submit" onclick="Signup()"><a href="./Login.html"> Signup</a></button>
+        </div>
+      </form>
+  </div>    
+</body>
+</html>
